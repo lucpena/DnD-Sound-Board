@@ -1,4 +1,13 @@
 async function loadMusicFromJSON() {
+
+    const spinner1 = document.getElementById('loadingSpinner1');
+    const spinner2 = document.getElementById('loadingSpinner2');
+    const spinner3 = document.getElementById('loadingSpinner3');
+
+    spinner1.style.display = 'flex';
+    spinner2.style.display = 'flex';
+    spinner3.style.display = 'flex';
+
     try {
         const response = await fetch('data.json');  // Caminho do JSON gerado
         const musicData = await response.json();
@@ -10,6 +19,10 @@ async function loadMusicFromJSON() {
     } catch (error) {
         console.error('Erro ao carregar músicas:', error);
         alert('Erro ao carregar músicas:', error);
+    } finally {
+        spinner1.style.display = 'none';
+        spinner2.style.display = 'none';
+        spinner3.style.display = 'none';
     }
 }
 

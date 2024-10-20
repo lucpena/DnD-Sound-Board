@@ -32,10 +32,18 @@
                     <input id="searchMusic" type="text" placeholder="Buscar" class="w-full p-2 border rounded-2xl" oninput="filterPlaylist('playlist1', this.value)">
                 </div>
 
+                <!-- Now Playing -->
                 <div class="bg-green-200 p-4 rounded-2xl animate-pulse">
                     <p id="musicName" class="font-semibold font-mono ">No sound playing...</p>
                 </div>
 
+                <!-- Loading Assets -->
+                <div id="loadingSpinner1" class="flex flex-col items-center justify-center mt-5 animate-pulse">
+                    <img src="https://cdn.betterttv.net/emote/5edc301ff54be95e2a843a7b/3x.webp" alt="loading">
+                    <div class="pt-4 font-extralight text-2xl">Loading...</div>
+                </div>                
+                
+                <!-- Playlist -->
                 <ul id="playlist1" class="space-y-2 mt-10">
                     <!-- Preenchida pelo JavaScript... -->
                 </ul>
@@ -61,7 +69,7 @@
 
                 <!-- Search -->
                 <div class="flex items-center space-x-4 mb-4">
-                    <input id="searchMusic" type="text" placeholder="Buscar" class="w-full p-2 border rounded-2xl" oninput="filterPlaylist('playlist2', this.value)">
+                    <input id="searchBackground" type="text" placeholder="Buscar" class="w-full p-2 border rounded-2xl" oninput="filterPlaylist('playlist2', this.value)">
                 </div>
 
                 <!-- Now Playing -->
@@ -69,6 +77,13 @@
                     <p id="backgroundName" class="font-semibold font-mono">No sound playing...</p>
                 </div>
 
+                <!-- Loading Assets -->
+                <div id="loadingSpinner2" class="flex flex-col items-center justify-center mt-5 animate-pulse">
+                    <img src="https://cdn.betterttv.net/emote/5f64156829c50203e0137353/3x.webp" alt="loading">
+                    <div class="pt-4 font-extralight text-2xl">Loading...</div>
+                </div>  
+
+                <!-- Playlist -->
                 <ul id="playlist2" class="space-y-2 mt-10">
                     <!-- Preenchida pelo JavaScript... -->
                 </ul>
@@ -78,12 +93,14 @@
             <!-- Coluna 3 -->
             <div class="bg-white p-6 shadow-md rounded-xl">
 
+                <!-- Player -->
                 <h2 class="text-xl font-bold mb-4">Efeitos Especiais</h2>
                 <audio id="player3" controls class="w-full mb-4">
                     <source src="" type="audio/mpeg">
                     Your browser sucks.
                 </audio>
 
+                <!-- Volume -->
                 <div class="flex items-center space-x-4 mb-6">
                     <label for="volume3" class="text-gray-700 font-medium">Volume:</label>
                     <input id="volume3" type="range" min="0" max="1" step="0.01" value="1" class="w-full" onchange="changeVolume('player3', this.value)">
@@ -91,9 +108,16 @@
 
                 <!-- Search -->
                 <div class="flex items-center space-x-4 mb-4">
-                    <input id="searchMusic" type="text" placeholder="Buscar" class="w-full p-2 border rounded-2xl" oninput="filterPlaylist('playlist3', this.value)">
+                    <input id="searchSFX" type="text" placeholder="Buscar" class="w-full p-2 border rounded-2xl" oninput="filterPlaylist('playlist3', this.value)">
                 </div>
 
+                <!-- Loading Assets -->
+                <div id="loadingSpinner3" class="flex flex-col items-center justify-center mt-5 animate-pulse">
+                    <img src="https://cdn.betterttv.net/emote/5ffaf84157784508462549fa/3x.webp" alt="loading">
+                    <div class="pt-4 font-extralight text-2xl">Loading...</div>
+                </div>  
+
+                <!-- Playlist -->
                 <ul id="playlist3" class="space-y-2 mt-10">                  
                     <!-- Preenchida pelo JavaScript... -->
                 </ul>
