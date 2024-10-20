@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Player - D&D</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="container mx-auto my-10">
+        <div class="grid md:grid-cols-3 gap-4 mx-3">
+
+            <!-- Coluna 1 -->
+            <div class="bg-white p-6 shadow-md rounded-xl">
+
+                <h2 class="text-xl font-bold mb-4">Música de Fundo</h2>
+                
+                <audio id="player1" loop="true" controls class="w-full mb-4">
+                    <source src="" type="audio/mpeg">
+                    Your browser sucks.
+                </audio>
+
+                <div class="flex items-center space-x-4 mb-6">
+                    <label for="volume1" class="text-gray-700 font-medium">Volume:</label>
+                    <input id="volume1" type="range" min="0" max="1" step="0.01" value="1" class="w-full" oninput="changeVolume('player1', this.value)">
+                </div>
+
+                <div class="bg-green-200 p-4 rounded-2xl animate-pulse">
+                    <p id="musicName" class="font-semibold font-mono ">No sound playing...</p>
+                </div>
+
+                <ul id="playlist1" class="space-y-2 mt-10">
+                    <!-- Preenchida pelo JavaScript... -->
+                </ul>
+
+            </div>
+
+            <!-- Coluna 2 -->
+            <div class="bg-white p-6 shadow-md rounded-xl">
+
+                <h2 class="text-xl font-bold mb-4">Sons de Fundo</h2>
+                
+                <audio id="player2" controls loop="true" class="w-full mb-4">
+                    <source src="" type="audio/mpeg">
+                    Your browser sucks.
+                </audio>
+
+                <div class="flex items-center space-x-4 mb-6">
+                    <label for="volume2" class="text-gray-700 font-medium">Volume:</label>
+                    <input id="volume2" type="range" min="0" max="1" step="0.01" value="1" class="w-full" oninput="changeVolume('player2', this.value)">
+                </div>
+
+                <div class="bg-green-200 p-4 rounded-2xl animate-pulse">
+                    <p id="backgroundName" class="font-semibold font-mono">No sound playing...</p>
+                </div>
+
+                <ul id="playlist2" class="space-y-2 mt-10">
+                    <!-- Preenchida pelo JavaScript... -->
+                </ul>
+
+            </div>
+
+            <!-- Coluna 3 -->
+            <div class="bg-white p-6 shadow-md rounded-xl">
+
+                <h2 class="text-xl font-bold mb-4">Efeitos Especiais</h2>
+                <audio id="player3" controls class="w-full mb-4">
+                    <source src="" type="audio/mpeg">
+                    Your browser sucks.
+                </audio>
+
+                <div class="flex items-center space-x-4 mb-6">
+                    <label for="volume3" class="text-gray-700 font-medium">Volume:</label>
+                    <input id="volume3" type="range" min="0" max="1" step="0.01" value="1" class="w-full" onchange="changeVolume('player3', this.value)">
+                </div>
+
+                <ul id="playlist3" class="space-y-2 mt-10">                  
+                    <!-- Preenchida pelo JavaScript... -->
+                </ul>
+
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" ></script>
+
+</body>
+</html>
