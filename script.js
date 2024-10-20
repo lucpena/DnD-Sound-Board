@@ -13,8 +13,8 @@ async function loadMusicFromJSON() {
     }
 }
 
-function createPlaylist(playlistId, musicList, playerId, basePath) {
-    const playlist = document.getElementById(playlistId);
+function createPlaylist(playlistID, musicList, playerID, basePath) {
+    const playlist = document.getElementById(playlistID);
     playlist.innerHTML = '';
 
     // Cria um item para cada música
@@ -23,13 +23,33 @@ function createPlaylist(playlistId, musicList, playerId, basePath) {
         const li = document.createElement('li');
         const fileName = file.split('.').slice(0, -1).join('.');
 
-        li.className = 'flex items-center justify-between p-4 bg-gray-200 hover:bg-gray-300 rounded-lg cursor-pointer';
-        li.onclick = () => playMusic(playerId, `${basePath}${file}`, fileName);
+        li.className = 'flex items-center justify-between p-4 bg-gray-200 hover:bg-gray-300 rounded-lg cursor-pointer search-item';
+        li.onclick = () => playMusic(playerID, `${basePath}${file}`, fileName);
         li.innerHTML = `
             <span class="text-sm font-medium text-gray-700">${fileName}</span>
         `;
         playlist.appendChild(li);
     });
+}
+
+function filterPlaylist(playlistID, query)
+{
+    const playlist = document.getElementById(playlistID);
+    const items = playlist.getElementsByClassName('search-item');
+    const lowerCaseQuery = query.toLowerCase();
+
+    for(let i = 0; i < items.length; i++)
+    {
+        const itemText = items[i].textContent.toLowerCase();
+
+        if( itemText.includes(lowerCaseQuery) )
+        {
+            items[i].style.display = '';
+        } else
+        {
+            items[i].style.display = 'none';
+        }
+    }
 }
 
 function playMusic(playerID, musicSrc, fileName)

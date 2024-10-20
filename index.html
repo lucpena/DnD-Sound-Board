@@ -15,14 +15,21 @@
 
                 <h2 class="text-xl font-bold mb-4">Música de Fundo</h2>
                 
+                <!-- Player -->
                 <audio id="player1" loop="true" controls class="w-full mb-4">
                     <source src="" type="audio/mpeg">
                     Your browser sucks.
                 </audio>
 
+                <!-- Volume -->
                 <div class="flex items-center space-x-4 mb-6">
                     <label for="volume1" class="text-gray-700 font-medium">Volume:</label>
                     <input id="volume1" type="range" min="0" max="1" step="0.01" value="1" class="w-full" oninput="changeVolume('player1', this.value)">
+                </div>
+
+                <!-- Search -->
+                <div class="flex items-center space-x-4 mb-4">
+                    <input id="searchMusic" type="text" placeholder="Buscar" class="w-full p-2 border rounded-2xl" oninput="filterPlaylist('playlist1', this.value)">
                 </div>
 
                 <div class="bg-green-200 p-4 rounded-2xl animate-pulse">
@@ -40,16 +47,24 @@
 
                 <h2 class="text-xl font-bold mb-4">Sons de Fundo</h2>
                 
+                <!-- Player  -->
                 <audio id="player2" controls loop="true" class="w-full mb-4">
                     <source src="" type="audio/mpeg">
                     Your browser sucks.
                 </audio>
 
+                <!-- Volume  -->
                 <div class="flex items-center space-x-4 mb-6">
                     <label for="volume2" class="text-gray-700 font-medium">Volume:</label>
                     <input id="volume2" type="range" min="0" max="1" step="0.01" value="1" class="w-full" oninput="changeVolume('player2', this.value)">
                 </div>
 
+                <!-- Search -->
+                <div class="flex items-center space-x-4 mb-4">
+                    <input id="searchMusic" type="text" placeholder="Buscar" class="w-full p-2 border rounded-2xl" oninput="filterPlaylist('playlist2', this.value)">
+                </div>
+
+                <!-- Now Playing -->
                 <div class="bg-green-200 p-4 rounded-2xl animate-pulse">
                     <p id="backgroundName" class="font-semibold font-mono">No sound playing...</p>
                 </div>
@@ -72,6 +87,11 @@
                 <div class="flex items-center space-x-4 mb-6">
                     <label for="volume3" class="text-gray-700 font-medium">Volume:</label>
                     <input id="volume3" type="range" min="0" max="1" step="0.01" value="1" class="w-full" onchange="changeVolume('player3', this.value)">
+                </div>
+
+                <!-- Search -->
+                <div class="flex items-center space-x-4 mb-4">
+                    <input id="searchMusic" type="text" placeholder="Buscar" class="w-full p-2 border rounded-2xl" oninput="filterPlaylist('playlist3', this.value)">
                 </div>
 
                 <ul id="playlist3" class="space-y-2 mt-10">                  

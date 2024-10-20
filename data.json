@@ -41,7 +41,7 @@
                        "Campfire At Dusk _ Adventure Ambience _ 1 Hour - Michael Ghelfi Studios.mp3",
                        "Canal City _ Busy, Waters, Fantasy RPG Ambience _ 3 Hours - Michael Ghelfi Studios.mp3",
                        "City Razed By A Monster _ Godzilla, Kaiju, Tarrasque, Destruction, RPG Ambience _ 3 Hours - Michael Ghelfi Studios.mp3",
-                       "Crowded Tavern _ Adventure Ambience _ 1 Hour #dnd - Michael Ghelfi Studios.mp3",
+                       "Crowded Tavern _ Adventure Ambience - Michael Ghelfi Studios.mp3",
                        "Cultist Hideout _ Evil Ritual ASMR Ambience _ 1 Hour - Michael Ghelfi Studios.mp3",
                        "D\u0026D Ambience _ Mysterious Jungle _ Immersive, Realistic, Animals - Michael Ghelfi Studios.mp3",
                        "Dark Ritual _ Join Us To Summon The Devil, Ambience _ 1 Hour - Michael Ghelfi Studios.mp3",
@@ -65,7 +65,7 @@
                        "Medieval City Indoor (Layer it!) _ Calm ASMR Ambience _ 1 Hour - Michael Ghelfi Studios.mp3",
                        "Old Fort _ Medieval RPG Ambience _ 3 Hours - Michael Ghelfi Studios.mp3",
                        "On The Shore _ Sea Ambience - Michael Ghelfi Studios.mp3",
-                       "Panicking Crowd _ Realistic Ambience _ 1 Hour #DnD #RPG - Michael Ghelfi Studios.mp3",
+                       "Panicking Crowd _ Realistic Ambience - Michael Ghelfi Studios.mp3",
                        "Quiet Tavern _ Innkeeper ASMR Ambience _ 1 Hour - Michael Ghelfi Studios.mp3",
                        "Ruined Castle  Haunted Or Not  Ambience.mp3",
                        "Sea Cave _ Damp Cavern near the Shore, Ambience _ 3 Hours - Michael Ghelfi Studios.mp3",
@@ -75,8 +75,9 @@
                        "Tavern Brawl _ Fantasy RPG Ambience _ 3 Hours - Michael Ghelfi Studios.mp3"
                    ],
     "sfx":  [
-                "Among us sound effect - Sound Effects.mp3",
+                "Among Us.mp3",
                 "KonoSuba OST 43 - Accomplishment - Ayata Melody.mp3",
-                "KonoSuba OST 48 - Fanfare of Light - Ayata Melody.mp3"
+                "KonoSuba OST 48 - Fanfare of Light - Ayata Melody.mp3",
+                "Level Up.mp3"
             ]
 }
